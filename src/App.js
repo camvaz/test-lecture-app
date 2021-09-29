@@ -2,6 +2,7 @@ import { useMockUser } from "./hooks/useMockUser";
 
 function App() {
   const { loading, error, data } = useMockUser();
+
   if (loading) {
     return <p>Loading...</p>;
   }
