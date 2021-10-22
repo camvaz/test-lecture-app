@@ -1,3 +1,4 @@
+import { DebounceRequestInput } from "./components/Debounce";
 import { useMockUser } from "./hooks/useMockUser";
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
 
   return (
     <div className="App">
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+      {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
+      <DebounceRequestInput />
     </div>
   );
 }
